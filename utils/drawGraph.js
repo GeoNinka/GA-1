@@ -20,7 +20,7 @@ function drawGraph () {
         data: {
             labels: length,
             datasets: [{
-                label: 'Популяции',
+                label: 'Лучший результат популяции',
                 data: bestWays,
                 fill: false,
                 borderColor: 'rgb(75, 192, 192)',
