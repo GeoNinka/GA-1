@@ -1,0 +1,52 @@
+textarea {
+    width: 240px;
+    height: 200px;
+    margin-left: 50px;
+}
+
+#canvas {
+    width: 800px;
+}
+
+#textfieldMutation {
+    width: 600px;
+}
+
+.find-button {
+    margin-top: 20px;
+}
+
+.wrapper { 
+    display: flex;
+    flex-direction: row;
+}
+
+.topology {
+    display: flex;
+    flex-direction: column;
+}
+
+.topology__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.topology__column {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+}
+
+.topology__index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+    border: white 2px solid;
+    color: rgb(59, 59, 59);
+}

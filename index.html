@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topology"></div>
+        <div class="settings">
+            <div>
+                <p>Начальный узел</p>
+                <input type="text" id="firstNode">
+            </div>
+            <div>
+                <p>Конечный узел</p>
+                <input type="text" id="lastNode">
+            </div>
+            <div>
+                <p>Количество поколений</p>
+                <input type="text" id="repeats">
+            </div>
+            <div>
+                <p>Тип скрещивания</p>
+                <select name="select" id="crossingSelect">
+                    <option value="1" selected>Случайные особи, несколько раз</option>
+                    <option value="2">Лучшая половина, несколько раз</option>
+                </select>
+            </div>
+            <div>
+                <p>Включить мутацию</p>
+                <input type="checkbox" id="isMutationActive">
+            </div>
+            <div>
+                <p>Тип мутации</p>
+                <select name="select" id="mutationSelect">
+                    <option value="0" selected>Инверсия гена</option>
+                    <option value="1">Замена на случайный ген</option>
+                    <option value="2">Замена на соседний ген</option>
+                    <option value="3">Случайная мутация</option>
+                </select>
+            </div>
+            <button id="generateButton" class="start-button">Сгенерировать популяцию</button>
+            <button id="startButton" class="start-button">Поиск</button>
+        </div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+    <div>
+        <textarea id="textfield"></textarea>
+        <textarea id="textfieldMutation"></textarea>  
+    </div>
+    <p>Пометун Вадим Андреевич</p>
+    <p>Группа 211-323</p>
+    <p>2024 год</p>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.umd.js"></script>
+<script type="module" src="script.js"></script>
+</html>
