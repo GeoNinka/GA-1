@@ -37,7 +37,7 @@ const changeToRandom = (chromosome, geneIndex) => {
 
 const changeToNeighbor = (chromosome, geneIndex) => {
     let outputChromosome = [...chromosome]
-    let idx = Math.floor(Math.random() * 8)
+    let idx = Number(Math.floor(Math.random() * (8 - 1)) + 1)
     let buble = chromosome[idx + 1]
     chromosome[idx + 1] = chromosome[idx]
     chromosome[idx] = buble
